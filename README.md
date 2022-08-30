@@ -1,2 +1,1 @@
-# arch
-template
+# Using HTML and CSS only
