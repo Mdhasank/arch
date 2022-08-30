@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    min-height:3rem;
+    max-height: 2.8rem;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    position: fixed;
+    box-shadow: 0vw 0vw 5vw 0.2vw;
+    z-index: 10;
+}
+.navlogo{
+    display: flex;
+    margin: 0rem 0.2rem 0 4rem;
+    font-size: 1.5rem;
+    
+}
+.navlogo b{
+    font-weight: 600;
+    margin-right: 6px;
+}
+.links{
+margin: 0 3rem 0 0;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin: 0 2vw;
+    border-radius: 2px;
+    padding: 4px 6px;
+    
+}
+.links a:hover{
+    background: #00000012;
+    color: #525252;
+    transition: 0.2s;
+}
+
+/* header-main section */
+main{
+    background-image: url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: 10wv;
+    background-position:center;
+    width:100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+    
+}
+main h1{
+    font-size: 3rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.669);
+    padding: 0.1rem 0.5rem;
+}
+main b{
+    font-size: 3rem;
+    color: white;
+    background: #000000b5;
+    padding: 0.1rem 0.5rem;
+}
+.topic{
+    font-size: 2rem;
+    margin: 5vw 0vh 2vw 3vw;
+    font-family: 'Teko', sans-serif;
+}
+hr{
+    color: rgb(123, 123, 123);
+    margin: 0 3vw;
+}
+/* about start here */
+#project{
+    display:flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 3vw 3vw 0 3vw;
+}
+#project img{
+    margin: 1vh;
+    width: 100%;
+    height: 50%;
+}
+.info{
+    display: flex;
+    margin: 2em 3vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-para{
+    margin: 3vw;
+    line-height: 1.4;
+    font-family: 'Teko', sans-serif;
+}
+.contributors{
+    width: 15rem;
+    background: #ededed;
+    padding: 1.2rem;
+    border-radius: 3px;
+    margin: 0.2rem;
+}
+.contributors:hover{
+    z-index: 1;
+    box-shadow: 0vw 0vw 1vw 0.5vw #8b8b8b;
+    transition: 0.8s;
+}
+.contributors h3{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6rem;
+    padding-top: 0.6rem;
+}
+.contributors h4{
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.contributors p{
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1.2rem;
+}
+.contributors img{
+    width: 100%;
+    border-radius: 3px;
+}
+/* info ends */
+
+.contact-para{
+    margin: 1.5vw 0 3vw 3vw;
+    font-size: 1.2rem;
+    font-family: 'Teko', sans-serif;
+}
+#input {
+    width: 60vw;
+    height: 2em;
+    margin: 0 0 1.3vw 3vw;
+    font-size: 1rem;
+    font-family: 'Teko', sans-serif;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+}
+#btn{
+    padding: 0.5rem;
+    margin: 0 0 0 3vw;
+    font-size: 1rem;
+    background-color: #262626;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 0px;
+}
+#btn:hover{
+    background: #6f6b6b;
+}
+.contact img{
+    margin-right: 3vw;
+    width: 26vw;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+#fill{
+    width: 60vw;
+    
+}
+/* contact ends here */
+footer{
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    height: 4rem;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+}
+footer p{
+    letter-spacing: 2px;
+    font-size: .7rem;
+}
+/* media queries */
+@media only screen and (max-width: 1230px){
+    .contributors{
+        width: 13rem;
+    }
+}
+@media only screen and (max-width: 1094px){
+    .contributors{
+        width: 11rem;
+    }
+    .contributors h3{
+        font-size: 1.3rem;
+    }
+    .contributors h4{
+        font-size: .8rem;
+    }
+    .contributors p{
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 958px){
+    .contributors{
+        width: 9rem;
+    }
+    .contributors h3{
+        font-size: 1rem;
+        padding-top: .8rem;
+    }
+    .contributors h4{
+        font-size: .8rem;
+        padding-top: .8rem;
+    }
+    .contributors p{
+        font-size: .7rem;
+        padding-top: .8rem;
+    }
+}
+@media only screen and (max-width: 822px){
+    .contributors{
+        width: 16rem;
+        margin-top: 2rem;
+    }
+    .info{
+        justify-content: space-evenly;
+    }
+    .links{
+        display: none;
+    }
+    .contact img{
+        display: none;
+    }
+    .contact-para{
+        font-size: 0.8rem;
+        margin: 3vw 0 3vw 3vw;
+    }
+    #input{
+        font-size: 0.8rem;
+        width: 80vw;
+        height: 2.5em;
+        margin: 0 0 3vw 3vw;
+    }
+    #btn{
+        font-size: 0.8rem;
+    }
+    .topic{
+        font-size: 1.5rem;
+        margin: 6vw 0vw 2vw 3vw;
+    }
+
+}
+@media only screen and (min-width: 1480px){
+    .info{
+        justify-content: space-evenly;
+    }
+}
